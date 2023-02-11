@@ -35,6 +35,10 @@ body {
   border-radius: 25px;
   position: relative;
   top: 127px;
+
+  @include media-breakpoint-up(lg) {
+    top: 100vh;
+  }
 }
 
 @import './header/index';
