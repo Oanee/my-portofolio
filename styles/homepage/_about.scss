@@ -1,0 +1,18 @@
+.about {
+  padding: 50px 9% 0 9%;
+  margin-bottom: 150px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 200px;
+  }
+
+  &-description {
+    display: flex;
+    justify-content: center;
+    color: $brand-primary;
+
+    &-paragraph {
+      text-align: center;
+    }
+  }
+}

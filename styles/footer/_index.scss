@@ -1,0 +1,31 @@
+.footer {
+  font-size: 10px;
+  position: relative;
+  top: 100vh;
+  padding: 20px;
+  color: $brand-tertiary;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+  }
+
+  &-rights {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    i {
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &-design {
+    text-align: center;
+    margin: 0;
+
+    span {
+      font-weight: 800;
+    }
+  }
+}

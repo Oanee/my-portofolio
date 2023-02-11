@@ -1,0 +1,42 @@
+@import './fonts';
+
+// fontawesome
+@import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+// bootstrap
+@import './../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import './../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import './../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+
+// reset
+@import './reset';
+
+// variables
+@import './variables';
+
+body {
+  font-size: 18px;
+  font-family: 'Prompt', serif;
+  color: $brand-primary;
+  background: $brand-tertiary url('/images/background.jpg') fixed center / cover
+    no-repeat;
+  height: 100vh;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+  }
+}
+
+.content {
+  background-color: $white;
+  border-radius: 25px;
+  position: relative;
+  top: 100vh;
+}
+
+@import './header/index';
+@import './homepage/index';
+@import './footer/index';
