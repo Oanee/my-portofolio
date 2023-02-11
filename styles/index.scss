@@ -21,10 +21,11 @@ body {
   font-size: 18px;
   font-family: 'Prompt', serif;
   color: $brand-primary;
-  background: $brand-tertiary url('/images/background.jpg') fixed center / cover
-    no-repeat;
+  background-color: $brand-tertiary;
 
   @include media-breakpoint-up(lg) {
+    background: $brand-tertiary url('/images/background.jpg') fixed center /
+      cover no-repeat;
     font-size: 24px;
   }
 }
@@ -33,7 +34,7 @@ body {
   background-color: $white;
   border-radius: 25px;
   position: relative;
-  top: 100vh;
+  top: 127px;
 }
 
 @import './header/index';

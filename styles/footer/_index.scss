@@ -1,9 +1,9 @@
 .footer {
   font-size: 10px;
   position: relative;
-  top: 100vh;
+  top: 127px;
   padding: 20px;
-  color: $brand-tertiary;
+  color: $brand-primary;
 
   @include media-breakpoint-up(lg) {
     font-size: 14px;
