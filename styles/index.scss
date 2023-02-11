@@ -31,8 +31,8 @@ body {
 
 @supports (-webkit-touch-callout: none) {
   body {
-    background: $brand-tertiary url('/images/background.jpg') fixed center /
-      cover no-repeat;
+    background: $brand-tertiary url('/images/background.jpg') center top
+      no-repeat scroll;
     background-size: auto 100vh;
   }
 }
