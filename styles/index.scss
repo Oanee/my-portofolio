@@ -21,12 +21,13 @@ body {
   font-size: 18px;
   font-family: 'Prompt', serif;
   color: $brand-primary;
-  background: $brand-tertiary url('/images/background.jpg') fixed center
-    no-repeat;
-
+  background: $brand-tertiary url('/images/background.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
 
   @include media-breakpoint-up(lg) {
