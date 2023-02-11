@@ -23,7 +23,7 @@ body {
   color: $brand-primary;
   background: $brand-tertiary url('/images/background.jpg') fixed center / cover
     no-repeat;
-  height: 100vh;
+  height: 100%;
 
   @include media-breakpoint-up(lg) {
     font-size: 24px;
