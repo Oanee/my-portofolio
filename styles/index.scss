@@ -21,19 +21,16 @@ body {
   font-size: 18px;
   font-family: 'Prompt', serif;
   color: $brand-primary;
-  background: $brand-tertiary url('/images/background.jpg') fixed center / cover
+  background: $brand-tertiary url('/images/background.jpg') fixed center
     no-repeat;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   @include media-breakpoint-up(lg) {
     font-size: 24px;
-  }
-}
-
-@supports (-webkit-touch-callout: none) {
-  body {
-    background: $brand-tertiary url('/images/background.jpg') center top
-      no-repeat scroll;
-    background-size: auto 100vh;
   }
 }
 
