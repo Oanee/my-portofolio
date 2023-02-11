@@ -29,6 +29,14 @@ body {
   }
 }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    background: $brand-tertiary url('/images/background.jpg') fixed center /
+      cover no-repeat;
+    background-size: auto 100vh;
+  }
+}
+
 .content {
   background-color: $white;
   border-radius: 25px;
