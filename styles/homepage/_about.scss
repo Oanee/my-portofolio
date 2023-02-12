@@ -6,13 +6,43 @@
     margin-bottom: 200px;
   }
 
-  &-description {
-    display: flex;
-    justify-content: center;
-    color: $brand-primary;
+  &-content {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
 
-    &-paragraph {
-      text-align: center;
+    &-photo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      @include media-breakpoint-up(lg) {
+        margin: 0;
+      }
+
+      img {
+        width: 200px;
+        border-radius: 50%;
+        outline: 6px solid #0c0c0c;
+        outline-offset: -1px;
+
+        @include media-breakpoint-up(lg) {
+          width: 300px;
+        }
+      }
+    }
+
+    &-description {
+      display: flex;
+      justify-content: center;
+      color: $brand-primary;
+
+      &-paragraph {
+        text-align: center;
+      }
     }
   }
 }
