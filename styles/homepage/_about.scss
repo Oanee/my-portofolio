@@ -26,7 +26,7 @@
       img {
         width: 200px;
         border-radius: 50%;
-        border: 4px inset #0c0c0c;
+        border: 4px dotted #0c0c0c;
         background-color: #0c0c0c;
 
         @include media-breakpoint-up(lg) {
