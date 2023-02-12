@@ -26,8 +26,7 @@
       img {
         width: 200px;
         border-radius: 50%;
-        outline: 6px solid #0c0c0c;
-        outline-offset: -1px;
+        border: 8px dotted #0c0c0c;
         background-color: #0c0c0c;
 
         @include media-breakpoint-up(lg) {
