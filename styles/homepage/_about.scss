@@ -28,6 +28,7 @@
         border-radius: 50%;
         outline: 6px solid #0c0c0c;
         outline-offset: -1px;
+        background-color: #0c0c0c;
 
         @include media-breakpoint-up(lg) {
           width: 300px;
