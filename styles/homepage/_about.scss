@@ -25,15 +25,13 @@
 
       img {
         width: 200px;
-        border-radius: 100px;
-        outline: 6px solid #0c0c0c;
-        outline-offset: -1px;
+        border-radius: 50%;
+        border: 4px inset #0c0c0c;
         background-color: #0c0c0c;
 
         @include media-breakpoint-up(lg) {
           width: 300px;
-          border-radius: 150px;
-          outline: 8px solid #0c0c0c;
+          border-width: 8px;
         }
       }
     }
