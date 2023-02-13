@@ -55,7 +55,7 @@ export default function Contact() {
 
             <li>
               <a
-                href="https://github.com/Oanee"
+                href="https://www.instagram.com/oanealin/"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="My instagram"
