@@ -10,6 +10,17 @@ export default function Home() {
     <>
       <header className="header container">
         <Header></Header>
+
+        <div className="header-scroll">
+          <div className="header-scroll-circle">
+            <div className="header-scroll-circle-wheel"></div>
+            <div className="header-scroll-circle-wheel-arrows">
+              <div className="arrow arrow-1"></div>
+              <div className="arrow arrow-2"></div>
+              <div className="arrow arrow-3"></div>
+            </div>
+          </div>
+        </div>
       </header>
 
       <main className="container">

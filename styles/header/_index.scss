@@ -140,4 +140,80 @@
       }
     }
   }
+
+  &-scroll {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-circle {
+      height: 126px;
+      width: 72px;
+      border-radius: 42px;
+      border: 6px solid #fff;
+
+      @keyframes mouse-wheel {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(18px);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      &-wheel {
+        height: 12px;
+        width: 12px;
+        margin: 15px auto;
+        background: $white;
+        border: 2px solid $white;
+        border-radius: 8px;
+        animation: mouse-wheel 1s linear infinite;
+
+        &-arrows {
+          position: relative;
+          top: 80px;
+          left: 7px;
+
+          @keyframes mouse-scroll {
+            0% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 0.5;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+
+          .arrow {
+            width: 48px;
+            height: 48px;
+            transform: rotate(45deg);
+            border-right: 6px solid $white;
+            border-bottom: 6px solid $white;
+            border-radius: 5px;
+            animation: mouse-scroll 0.8s alternate infinite;
+          }
+
+          .arrow-2 {
+            animation-delay: 0.2s;
+          }
+
+          .arrow-3 {
+            animation-delay: 0.4s;
+          }
+        }
+      }
+    }
+  }
 }
