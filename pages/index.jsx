@@ -4,7 +4,7 @@ import { About } from '@/components/Homepage/About';
 import Contact from '@/components/Homepage/Contact';
 import Skills from '@/components/Homepage/Skills';
 import Work from '@/components/Homepage/Work';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 export default function Home() {
   return (
@@ -13,7 +13,15 @@ export default function Home() {
         <Header></Header>
 
         <div className="header-scroll">
-          <Link href="#about-jump" className="header-scroll-circle">
+          <Link
+            to="about-jump"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={500}
+            className="header-scroll-circle"
+          >
             <div className="header-scroll-circle-wheel"></div>
             <div className="header-scroll-circle-wheel-arrows">
               <div className="arrow arrow-1"></div>

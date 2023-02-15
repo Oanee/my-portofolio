@@ -49,6 +49,8 @@
       }
 
       &-image {
+        cursor: pointer;
+
         @keyframes rotation {
           0% {
             transform: rotate(0deg);
@@ -106,6 +108,7 @@
 
         li {
           position: relative;
+          cursor: pointer;
 
           @include media-breakpoint-up(lg) {
             &::before {
@@ -154,6 +157,7 @@
       width: 72px;
       border-radius: 42px;
       border: 6px solid #fff;
+      cursor: pointer;
 
       @keyframes mouse-wheel {
         0% {

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 export function Header() {
   return (
@@ -6,7 +6,14 @@ export function Header() {
       <section className="header-section container">
         <div className="header-section-top">
           <div className="header-section-top-image">
-            <Link href="/">
+            <Link
+              to="about-jump"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-1000}
+              duration={500}
+            >
               <picture className="header-section-top-image-picture">
                 <img
                   src="/images/bird.png"
@@ -19,19 +26,56 @@ export function Header() {
 
           <ul className="header-section-top-list">
             <li>
-              <Link href="#about-jump">About</Link>
+              <Link
+                to="about-jump"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-130}
+                duration={500}
+                isDynamic={true}
+              >
+                About
+              </Link>
             </li>
 
             <li>
-              <Link href="#work-jump">Work</Link>
+              <Link
+                to="work-jump"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-130}
+                duration={500}
+              >
+                Work
+              </Link>
             </li>
 
             <li>
-              <Link href="#skills-jump">Skills</Link>
+              <Link
+                to="skills-jump"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-130}
+                duration={500}
+              >
+                Skills
+              </Link>
             </li>
 
             <li>
-              <Link href="#contact-jump">Contact</Link>
+              <Link
+                to="contact-jump"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-130}
+                duration={500}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
