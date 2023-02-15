@@ -24,7 +24,7 @@ export default function Home() {
           >
             <div className="header-scroll-circle-wheel"></div>
             <div className="header-scroll-circle-wheel-arrows">
-              <div className="arrow arrow-1"></div>
+              <div className="arrow"></div>
               <div className="arrow arrow-2"></div>
               <div className="arrow arrow-3"></div>
             </div>
