@@ -1,5 +1,5 @@
 .skills {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 200px;
@@ -12,7 +12,7 @@
       font-size: 12px;
       margin: 0;
       font-size: 15px;
-      grid-row-gap: 20px;
+      grid-row-gap: 10px;
       text-align: center;
       margin: 0 15%;
       font-weight: 500;
@@ -20,7 +20,6 @@
 
       @include media-breakpoint-up(lg) {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-row-gap: 50px;
         margin: 0 100px;
         font-size: inherit;
       }

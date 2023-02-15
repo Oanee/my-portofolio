@@ -181,7 +181,6 @@
         &-arrows {
           position: relative;
           top: 80px;
-          left: 7px;
 
           @keyframes mouse-scroll {
             0% {
@@ -196,6 +195,9 @@
           }
 
           .arrow {
+            position: relative;
+            left: 6px;
+            top: -8px;
             width: 48px;
             height: 48px;
             transform: rotate(45deg);
