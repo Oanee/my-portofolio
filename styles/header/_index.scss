@@ -1,6 +1,87 @@
 .header {
   position: relative;
 
+  @include media-breakpoint-up(lg) {
+    &-scroll {
+      height: 100vh;
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-circle {
+        height: 126px;
+        width: 72px;
+        border-radius: 42px;
+        border: 6px solid #fff;
+        cursor: pointer;
+
+        @keyframes mouse-wheel {
+          0% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(18px);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        &-wheel {
+          height: 12px;
+          width: 12px;
+          margin: 15px auto;
+          background: $white;
+          border: 2px solid $white;
+          border-radius: 8px;
+          animation: mouse-wheel 1s linear infinite;
+
+          &-arrows {
+            position: relative;
+            top: 80px;
+
+            @keyframes mouse-scroll {
+              0% {
+                opacity: 0;
+              }
+              50% {
+                opacity: 0.5;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+
+            .arrow {
+              position: relative;
+              left: 6px;
+              top: -8px;
+              width: 48px;
+              height: 48px;
+              transform: rotate(45deg);
+              border-right: 6px solid $white;
+              border-bottom: 6px solid $white;
+              border-radius: 5px;
+              animation: mouse-scroll 0.8s alternate infinite;
+            }
+
+            .arrow-2 {
+              animation-delay: 0.2s;
+            }
+
+            .arrow-3 {
+              animation-delay: 0.4s;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &-section {
     position: fixed;
     padding: 20px 50px 10px 25px;
@@ -15,7 +96,6 @@
     &::before {
       content: '';
       position: absolute;
-
       background-color: transparent;
       bottom: -50px;
       left: 1px;
@@ -31,7 +111,7 @@
       background-color: transparent;
       bottom: -50px;
       height: 50px;
-      right: 36px;
+      right: 23px;
       width: 25px;
       border-top-right-radius: 25px;
       box-shadow: 1px -25px 0 0 $brand-tertiary;
@@ -141,85 +221,6 @@
             @include media-breakpoint-up(lg) {
               text-align: inherit;
             }
-          }
-        }
-      }
-    }
-  }
-
-  &-scroll {
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &-circle {
-      height: 126px;
-      width: 72px;
-      border-radius: 42px;
-      border: 6px solid #fff;
-      cursor: pointer;
-
-      @keyframes mouse-wheel {
-        0% {
-          transform: translateY(0);
-        }
-
-        50% {
-          transform: translateY(18px);
-        }
-
-        100% {
-          transform: translateY(0);
-        }
-      }
-
-      &-wheel {
-        height: 12px;
-        width: 12px;
-        margin: 15px auto;
-        background: $white;
-        border: 2px solid $white;
-        border-radius: 8px;
-        animation: mouse-wheel 1s linear infinite;
-
-        &-arrows {
-          position: relative;
-          top: 80px;
-
-          @keyframes mouse-scroll {
-            0% {
-              opacity: 0;
-            }
-            50% {
-              opacity: 0.5;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-
-          .arrow {
-            position: relative;
-            left: 6px;
-            top: -8px;
-            width: 48px;
-            height: 48px;
-            transform: rotate(45deg);
-            border-right: 6px solid $white;
-            border-bottom: 6px solid $white;
-            border-radius: 5px;
-            animation: mouse-scroll 0.8s alternate infinite;
-          }
-
-          .arrow-2 {
-            animation-delay: 0.2s;
-          }
-
-          .arrow-3 {
-            animation-delay: 0.4s;
           }
         }
       }
