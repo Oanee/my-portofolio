@@ -15,7 +15,7 @@ export default function Contact() {
             </li>
 
             <li>
-              <a href="tel:+0758398683" title="My telephone number">
+              <a href="tel:0758398683" title="My telephone number">
                 <i className="fa-solid fa-phone"></i>
               </a>
             </li>
